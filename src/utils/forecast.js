@@ -19,7 +19,7 @@ function getForecast(latitude, longitude, callback) {
             // console.error(chalk.bgRed(`(Error ${error.code}) ${error.info}`));
         } else {
             const data = response.current;
-            callback(undefined, `${data.weather_descriptions[0]}. It is currently ${data.temperature} degrees out. It feels like ${data.feelslike} degrees out.`)
+            callback(undefined, `${data.weather_descriptions[0]}. It is currently ${data.temperature} degrees out. It feels like ${data.feelslike} degrees out. The humidity is ${data.humidity}%.`)
             // console.log(`${data.weather_descriptions[0]}. It is currently ${data.temperature} degrees out. It feels like ${data.feelslike} degrees out.`)
         }
     });
