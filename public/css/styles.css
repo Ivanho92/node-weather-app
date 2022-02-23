@@ -37,6 +37,10 @@ header a {
     text-decoration: none;
 }
 
+a {
+    color: inherit;
+}
+
 .profile-picture {
     width: 250px;
 }
